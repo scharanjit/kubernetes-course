@@ -1,0 +1,12 @@
+minikube start
+
+kubectl version
+
+cat ~/.kube/config
+
+
+4 way to install and run kubernetes
+
+minikube /docker client  ==> Both cannot be used for production
+
+kops /kubeadm
