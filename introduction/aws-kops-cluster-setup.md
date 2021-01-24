@@ -14,7 +14,7 @@ charanjiths@XXXXXXXX ~ % aws iam list-users
 
 charanjiths@XXXXXXXX ~ % aws sts get-caller-identity
 
-charanjiths@PRINHYLTPAP1459 ~ % kubectl config get-contexts
+charanjiths@XXXX ~ % kubectl config get-contexts
 CURRENT   NAME   CLUSTER   AUTHINFO   NAMESPACE
 
 
@@ -63,7 +63,7 @@ pramati.com name server ns-23.awsdns-02.com.
 
 
 5.2) 
-charanjiths@PRINHYLTPAP1459 ~ % whois pramati.com
+charanjiths@XXXX ~ % whois pramati.com
 % IANA WHOIS server
 % for more information on IANA, visit http://www.iana.org
 % This query returned 1 object
@@ -114,7 +114,7 @@ freedns5.registrar-servers.com
    charanjiths@Xxxxx ~ % ssh-keygen -f .ssh/id_rsa_kops
    
    Copy pub (public key goes to instance)
-   charanjiths@PRINHYLTPAP1459 ~ % cat .ssh/id_rsa_kops.pub
+   charanjiths@XXXX ~ % cat .ssh/id_rsa_kops.pub
    
    
    Check Zonal Info
