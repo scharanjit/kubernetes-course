@@ -44,4 +44,5 @@ Password:
 Login Succeeded
 
 charanjiths@XXXXXXXXX docker-demo % docker tag a732ab48538c sich6002/k8s-demo:latest
+                                    docker tag <imageid> <image-name>
 charanjiths@XXXXXXX docker-demo % docker push sich6002/k8s-demo

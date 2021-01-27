@@ -18,3 +18,9 @@ Container is live instance of docker image
 ### docker-demo
 
 ### first-app
+
+### replication-controller
+
+### deployment
+
+### service

@@ -1,0 +1,82 @@
+Horizontal scaling is preferred when pod is STATELESS
+
+charanjiths@XXXX first-app % kubectl get pods
+NAME                         READY   STATUS    RESTARTS   AGE
+hello-minikube               1/1     Running   2          2d22h
+nodehelloworld.example.com   1/1     Running   1          46h
+charanjiths@XXXX first-app % cd ../
+charanjiths@XXXX kubernetes-course % kubectl create -f replication-controller/helloworld-repl-controller.yml
+replicationcontroller/helloworld-controller created
+
+charanjiths@XXXX kubernetes-course % kubectl get pods
+NAME                          READY   STATUS    RESTARTS   AGE
+hello-minikube                1/1     Running   3          2d22h
+helloworld-controller-q9hvs   1/1     Running   1          6m33s
+helloworld-controller-vc7cl   1/1     Running   0          47s
+
+
+##Scale UP with file name
+
+charanjiths@XXXX replication-controller % kubectl scale --replicas=4 -f helloworld-repl-controller.yml
+replicationcontroller/helloworld-controller scaled
+charanjiths@XXXX replication-controller % kubectl get pods
+NAME                          READY   STATUS              RESTARTS   AGE
+hello-minikube                1/1     Running             3          2d22h
+helloworld-controller-9fgkp   0/1     ContainerCreating   0          5s
+helloworld-controller-bh2n8   1/1     Running             0          3m48s
+helloworld-controller-dfpxn   0/1     ContainerCreating   0          5s
+helloworld-controller-q9hvs   1/1     Running             1          14m
+
+
+##Scale Down
+
+charanjiths@XXXX replication-controller % kubectl scale --replicas=1 -f helloworld-repl-controller.yml
+replicationcontroller/helloworld-controller scaled
+charanjiths@XXXX replication-controller % kubectl get pods
+NAME                          READY   STATUS        RESTARTS   AGE
+hello-minikube                1/1     Running       3          2d22h
+helloworld-controller-9fgkp   1/1     Terminating   0          45s
+helloworld-controller-bh2n8   1/1     Terminating   0          4m28s
+helloworld-controller-dfpxn   1/1     Terminating   0          45s
+helloworld-controller-q9hvs   1/1     Running       1          14m
+
+
+
+##Scale up with replication controller name
+
+charanjiths@XXXX replication-controller % kubectl get rc
+NAME                    DESIRED   CURRENT   READY   AGE
+helloworld-controller   1         1         1       21m
+charanjiths@XXXX replication-controller % kubectl scale --replicas=5 rc/helloworld-controller 
+replicationcontroller/helloworld-controller scaled
+charanjiths@XXXX replication-controller % kubectl get pods
+NAME                          READY   STATUS              RESTARTS   AGE
+hello-minikube                1/1     Running             3          2d22h
+helloworld-controller-bv52l   0/1     ContainerCreating   0          4s
+helloworld-controller-klcq4   0/1     ContainerCreating   0          4s
+helloworld-controller-msgs4   0/1     ContainerCreating   0          4s
+helloworld-controller-q9hvs   1/1     Running             1          16m
+helloworld-controller-v79n6   0/1     ContainerCreating   0          4s
+
+
+
+## Delete this controller
+
+charanjiths@XXXX replication-controller % kubectl get pods
+NAME                          READY   STATUS        RESTARTS   AGE
+hello-minikube                1/1     Running       3          2d22h
+helloworld-controller-bv52l   1/1     Terminating   0          2m6s
+helloworld-controller-klcq4   1/1     Terminating   0          2m6s
+helloworld-controller-msgs4   1/1     Terminating   0          2m6s
+helloworld-controller-q9hvs   1/1     Running       1          18m
+helloworld-controller-v79n6   1/1     Terminating   0          2m6s
+charanjiths@XXXX replication-controller % kubectl delete rc/helloworld-controller
+replicationcontroller "helloworld-controller" deleted
+charanjiths@XXXX replication-controller % kubectl get pods                       
+NAME                          READY   STATUS        RESTARTS   AGE
+hello-minikube                1/1     Running       3          2d22h
+helloworld-controller-bv52l   1/1     Terminating   0          2m22s
+helloworld-controller-klcq4   1/1     Terminating   0          2m22s
+helloworld-controller-msgs4   1/1     Terminating   0          2m22s
+helloworld-controller-q9hvs   1/1     Terminating   1          18m
+helloworld-controller-v79n6   1/1     Terminating   0          2m22s

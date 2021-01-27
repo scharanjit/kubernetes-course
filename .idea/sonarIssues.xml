@@ -8,12 +8,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/deployment/deployments.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/deployment/helloworld.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/docker-demo/README.md">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/first-app/running-first-app-on-kubernetes.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/first-app/running-first-app-with-LoadBalancer.md">
           <value>
             <set />
           </value>
@@ -34,6 +49,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/introduction/minikube-commands">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/replication-controller/replication-horizontal-scaling">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/service/service.md">
           <value>
             <set />
           </value>
