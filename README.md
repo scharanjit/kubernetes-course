@@ -24,3 +24,10 @@ Container is live instance of docker image
 ### deployment
 
 ### service
+
+
+### labels
+
+### health-check
+
+### pod-lifecycle

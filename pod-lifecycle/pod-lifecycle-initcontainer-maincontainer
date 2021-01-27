@@ -1,0 +1,4 @@
+Init container ==> when we use volumes, If we want to create some
+ directories before initialing the main container
+
+post Start and pre stop hookes ==>
