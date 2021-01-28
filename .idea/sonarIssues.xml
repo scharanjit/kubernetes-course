@@ -78,7 +78,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/secrets/secrets.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/service/service.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/wordpress/wordpress.md">
           <value>
             <set />
           </value>

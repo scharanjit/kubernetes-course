@@ -31,3 +31,7 @@ Container is live instance of docker image
 ### health-check
 
 ### pod-lifecycle
+
+### secrets
+
+### wordpress
