@@ -35,3 +35,8 @@ Container is live instance of docker image
 ### secrets
 
 ### wordpress
+
+### service-discovery
+
+### config map
+
