@@ -40,3 +40,10 @@ Container is live instance of docker image
 
 ### config map
 
+### ingress
+
+### external-dns
+
+### volumes
+
+### pod-presets
