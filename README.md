@@ -47,3 +47,7 @@ Container is live instance of docker image
 ### volumes
 
 ### pod-presets
+
+### stateful sets
+
+### auto-scaling
