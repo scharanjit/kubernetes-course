@@ -51,3 +51,7 @@ Container is live instance of docker image
 ### stateful sets
 
 ### auto-scaling
+
+### affinity
+
+### tolerations

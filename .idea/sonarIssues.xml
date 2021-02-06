@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/affinity/affinity.md">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/autoscaling/autoscaling-with-hpa.md">
           <value>
             <set />
@@ -114,6 +119,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/service/service.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tolerations/README.md">
           <value>
             <set />
           </value>
