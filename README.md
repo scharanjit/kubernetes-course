@@ -55,3 +55,9 @@ Container is live instance of docker image
 ### affinity
 
 ### tolerations
+
+### postgress-operator
+
+### administration
+
+### resourcequotas
