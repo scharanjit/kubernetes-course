@@ -1,0 +1,1 @@
+charanjiths@XXXX kubernetes-course % minikube start --extra-config=apiserver.Authorization.Mode=RBAC
