@@ -1,0 +1,3 @@
+Read attached pdf
+
+>> Screenshot for How to add tls certificate in aws at route 53?
