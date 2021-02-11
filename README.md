@@ -71,3 +71,9 @@ Container is live instance of docker image
 ### high-availability
 
 ### elb-tls
+
+### admission-controller
+
+### pod-security-plocies
+
+### etcd
